@@ -47,6 +47,8 @@ install: all
 	cp lisgd.1 ${DESTDIR}${PREFIX}/share/man/man1
 	chmod 755 ${DESTDIR}${PREFIX}/share/man/man1
 
+uninstall:
+	rm -f ${DESTDIR}${PREFIX}/bin/lisgd ${DESTDIR}${PREFIX}/share/man/man1/lisgd.1
 
 clean:
 	rm -f lisgd.o lisgd
